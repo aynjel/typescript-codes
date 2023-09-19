@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES2016", // Specify the target ECMAScript version
+        "module": "CommonJS", // Specify the module system (e.g., CommonJS, ESNext)
+        "strict": true, // Enable all strict type-checking options
+        // "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+        "skipLibCheck": true, // Skip type checking of declaration files
+        "forceConsistentCasingInFileNames": true, // Ensure consistent file name casing
+        "outDir": "./dist", // Specify the output directory for compiled files
+        "rootDir": "./src", // Specify the root directory of your source files
+        "declaration": true, // Generate declaration files (.d.ts)
+        "sourceMap": true, // Generate source maps for debugging
+        "removeComments": true,
+        "noImplicitAny": true, // Enable error reporting for expressions and declarations with an implied 'any' type.
+        "noEmitOnError": true, // Disable emitting files if any type checking errors are reported.
+        "noUnusedLocals": true, // Enable error reporting when a local variables aren't read.
+        //"lib": [ "ES2016", "DOM"], // Specify a set of bundled library declaration files that describe the target runtime environment.
+    },
+    "include": [
+        "src/**/*.ts"
+    ], // Specify the files to be included in compilation
+    "exclude": [
+        "node_modules"
+    ] // Specify the files to be excluded from compilation
+}
